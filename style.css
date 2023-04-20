@@ -2,180 +2,194 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Tilt+Prism&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Nanum+Gothic&display=swap');
-*{
-    margin:0;
+
+* {
+    margin: 0;
     padding: 0;
-   
+
 }
 
-.container{      
+.container {
     height: 100vh;
     width: 100vw;
-  
 
-}  
-
-
-
- /* sidebar-section*/
-
-
-.sidebar{
-    background-color:blue;
-    font-family: 'Poppins', sans-serif;
-   height: 100vh; 
-   color:antiquewhite;
 
 }
 
-.sidebar .nav{
+
+
+/* sidebar-section*/
+
+
+.sidebar {
+    position: absolute;
+    background-color: blue;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    color: antiquewhite;
+    transition: transform 0.3s ease-in;
+
+}
+
+.sidebar .nav {
     padding: 11px;
 }
 
-.sidebar .nav li{
+.sidebar .nav li {
     list-style: none;
     padding: 22px;
     font-size: 11px;
-    margin-top:40px;
-    
-}
-
-.sidebar .nav li:hover{
- border:   thick double rgb(0, 102, 255);
-cursor: pointer;
- padding: 10px;
- transition-property:border;
-
- transition-timing-function: linear;
+    margin-top: 40px;
 
 }
 
+.sidebar .nav li:hover {
+    border: thick double rgb(0, 102, 255);
+    cursor: pointer;
+    padding: 10px;
+    transition-property: border;
 
-.sidebar .nav li a{
+    transition-timing-function: linear;
+
+}
+
+
+.sidebar .nav li a {
     text-decoration: none;
-    color:aliceblue;
+    color: aliceblue;
 }
 
 
 /** main-section*/
 
-.container{
-    display :flex;
+.container {
+    display: flex;
 }
 
 
 
 
-.main{
-    background-color:white;
+.main {
+    background-color: white;
     font-family: 'Poppins', sans-serif;
- height: auto;
-   width:90vw;
-}
-
-.hamburger{    position: absolute;
-    top: 2px;
-    left: 10px;
-cursor: pointer;}
-
-.cross{
-    margin-left: 73px;
-    margin-top: 1px;
-}
-
-.sidebargo{
-    transform: translate(-129px,0);
-     position: absolute;
- }
-
-
-
-.infocon{
-    background-color:white;
     height: auto;
-    width:90vw;
+    width: 90vw;
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cross {background-color:rgba(253, 255, 240, 0.849);
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.sidebarGo {
+    transform: translate(-129px, 0);
+    position: absolute;
+}
+
+
+
+.infocon {
+    background-color: white;
+    height: auto;
+    width: 90vw;
     display: flex;
     justify-content: space-around;
 }
 
-.info{
+.info {
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hello{
+.hello {
     font-size: 68px;
 }
 
-.name{
+.name {
     font-size: 49px;
-    margin-bottom: 35px
+    margin-bottom: 35px ;
     font-family: 'Lora', serif;
 }
 
-.hobby{
+.hobby {
     font-size: 27px;
     margin-top: -6px;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-.about{padding: 29px;
-    font-size: 14px;}
+.about {
+    padding: 29px;
+    font-size: 14px;
+}
 
 
- .pic img{   
+.devPic img {
     background-color: white;
     margin-top: 60px;
     width: 412px;
     height: 380px;
     margin-right: 131px;
- }
-.button button{
-    padding:14px;
-    border-radius: 21px;
-    background-color:blue;
-    color: beige;
-    margin-top: 16px;
-    cursor:pointer;
-
-  
 }
 
-.button button a{
+.button button {
+    padding: 14px;
+    border-radius: 21px;
+    background-color: blue;
+    color: beige;
+    margin-top: 16px;
+    cursor: pointer;
+
+
+}
+
+.button button a {
     text-decoration: none;
 }
 
-.button button:hover{
-    background-color:black;
+.button button:hover {
+    background-color: black;
     color: greenyellow;
 }
 
-   
+
 
 /* contact-from*/
 
-.main h1{  text-align: center;
+.main h1 {
+    text-align: center;
     font-family: 'Nanum Gothic', sans-serif;
     padding: 52px;
 }
 
-.contactform form div{
-    display:flex;
+.contactform form div {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-.contactform form div input{
+
+.contactform form div input {
     width: 30vw;
     border-radius: 5px;
-    background-color:darkred;
+    background-color: darkred;
     color: blanchedalmond;
-   cursor: pointer;
+    cursor: pointer;
 }
 
 
-.contactform form div button{
+.contactform form div button {
     background-color: black;
     color: beige;
     border-radius: 5px;
@@ -187,90 +201,99 @@ cursor: pointer;}
 
 
 /* blog-code*/
-.blog h1{
+.blog h1 {
     text-align: left;
- padding-inline: 57px;
+    padding-inline: 57px;
 }
-.blog-body{
+
+.blog-body {
     margin-top: 59px;
     padding: 10px 80px;
     font-size: 50px;
 }
 
 
-.blog div h2{
-    color:black;
-    font-family: 'Poppins', sans-serif; 
+.blog div h2 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
     font-size: 22px;
     padding: 2px;
 }
 
-.blog div p{
+.blog div p {
     font-size: 10px;
 }
-.blog div button{
+
+.blog div button {
     background-color: blue;
     color: blanchedalmond;
     border-radius: 7px;
     height: 32px;
     width: 79px;
-    margin-top: 5px;8*
+    margin-top: 5px;
 }
 
 
 
 /* INTRO-SECTION*/
 
-.about h2{    color:black;
-    font-family: 'Poppins', sans-serif; 
+.about h2 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
     font-size: 37px;
     padding: 18px;
 
 }
 
-.about p{
+.about p {
     font-size: 16px;
     padding: 13px;
     padding: 18px;
 }
 
 
-.skill h2{ 
+.skill h2 {
     font-family: 'Poppins', sans-serif;
     padding-left: 43px;
     font-size: 34px;
 }
 
-.skill li {list-style: none;
-   padding: 9px 40px;
-    font-family: 'Poppins', sans-serif; 
- font-size: 25px;
+.skill li {
+    list-style: none;
+    padding: 9px 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
 }
-.skill .one hr{margin-left: 43px;
+
+.skill .one hr {
+    margin-left: 43px;
     height: 8px;
     border-radius: 5px;
-    width:100px;
+    width: 100px;
     background-color: darkviolet;
 }
 
-.skill .one2 hr{margin-left: 43px;
+.skill .one2 hr {
+    margin-left: 43px;
     height: 8px;
     border-radius: 5px;
-    width:200px;
+    width: 200px;
     background-color: darkviolet;
 }
 
-.skill .one3 hr{margin-left: 43px;
+.skill .one3 hr {
+    margin-left: 43px;
     height: 8px;
     border-radius: 5px;
-    width:300px;
+    width: 300px;
     background-color: darkviolet;
 }
 
-.skill .one4 hr{margin-left: 43px;
+.skill .one4 hr {
+    margin-left: 43px;
     height: 8px;
     border-radius: 5px;
-    width:400px;
+    width: 400px;
     background-color: darkviolet;
 }
 
@@ -279,9 +302,12 @@ cursor: pointer;}
 
 
 /* media-queries*/
-@media(max-width:1215px){
-   
-   *{
-    background-color:red;
-   } 
+@media(max-width: 1615px) {
+.devPic {
+    display: none;
 }
+    /* *{
+    background-color:red;
+   }  */
+}
+
